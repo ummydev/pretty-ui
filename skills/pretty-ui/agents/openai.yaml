@@ -1,0 +1,4 @@
+interface:
+  display_name: "pretty-ui"
+  short_description: "Make AI-built UI look designed, not generated"
+  default_prompt: "Use $pretty-ui on this screen: show me three design directions, then apply the one I pick."

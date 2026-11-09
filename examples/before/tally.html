@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tally: a typical vibecoded landing page (before)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: 'Inter', sans-serif; background: #0b0b1a; color: #fff; min-height: 900px; overflow: hidden; }
+  .bg { position: absolute; inset: 0; background: radial-gradient(circle at 30% 20%, #7c3aed 0%, transparent 40%), radial-gradient(circle at 80% 60%, #4f46e5 0%, transparent 45%); opacity: .55; }
+  nav { position: relative; display: flex; justify-content: space-between; align-items: center; padding: 22px 48px; }
+  .logo { font-weight: 800; font-size: 22px; }
+  .nav-pill { display: flex; gap: 28px; padding: 10px 26px; border-radius: 999px; background: rgba(255,255,255,.08); backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,.15); font-size: 14px; }
+  .cta { padding: 11px 22px; border-radius: 999px; background: linear-gradient(90deg, #8b5cf6, #6366f1); box-shadow: 0 0 30px rgba(139,92,246,.6); font-weight: 600; font-size: 14px; }
+  .hero { position: relative; text-align: center; padding: 64px 48px 0; }
+  .eyebrow { display: inline-block; padding: 6px 14px; border-radius: 999px; background: rgba(139,92,246,.18); border: 1px solid rgba(139,92,246,.5); font-size: 12px; text-transform: uppercase; letter-spacing: .14em; margin-bottom: 26px; }
+  .pulse { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #a78bfa; margin-right: 8px; animation: ping 1.4s infinite; }
+  @keyframes ping { 50% { transform: scale(1.8); opacity: .3; } }
+  h1 { font-size: 68px; line-height: 1.05; font-weight: 800; letter-spacing: -.02em; }
+  h1 span { background: linear-gradient(90deg, #c084fc, #818cf8, #38bdf8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .sub { margin: 22px auto 0; max-width: 620px; font-size: 19px; color: rgba(255,255,255,.7); }
+  .buttons { margin-top: 34px; display: flex; gap: 14px; justify-content: center; }
+  .ghost { padding: 13px 26px; border-radius: 999px; border: 1px solid rgba(255,255,255,.25); font-weight: 600; }
+  .proof { margin-top: 26px; font-size: 13px; color: rgba(255,255,255,.55); }
+  .cards { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; padding: 52px 120px 0; }
+  .card { padding: 26px; border-radius: 22px; background: rgba(255,255,255,.06); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,.12); text-align: left; }
+  .icon { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; font-size: 22px; background: linear-gradient(135deg, #8b5cf6, #6366f1); margin-bottom: 16px; }
+  .card h3 { font-size: 17px; margin-bottom: 6px; }
+  .card p { font-size: 14px; color: rgba(255,255,255,.6); line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<nav>
+  <div class="logo">Tally ✨</div>
+  <div class="nav-pill"><span>Features</span><span>Pricing</span><span>Customers</span><span>Blog</span></div>
+  <div class="cta">Get Started 🚀</div>
+</nav>
+<section class="hero">
+  <div class="eyebrow"><span class="pulse"></span>New · AI-powered invoicing</div>
+  <h1>Unlock the power of<br><span>seamless invoicing</span></h1>
+  <p class="sub">Supercharge your workflow with next-gen tools that elevate your freelance business to the next level.</p>
+  <div class="buttons"><div class="cta">Start Free Trial ⚡</div><div class="ghost">Watch Demo</div></div>
+  <p class="proof">Trusted by 10,000+ teams worldwide · ⭐⭐⭐⭐⭐ "Game-changer!" – John Doe, CEO at Acme</p>
+</section>
+<section class="cards">
+  <div class="card"><div class="icon">⚡</div><h3>Lightning Fast</h3><p>Create invoices in seconds with our cutting-edge AI engine.</p></div>
+  <div class="card"><div class="icon">🔒</div><h3>Secure & Reliable</h3><p>Bank-level security keeps your data safe and sound.</p></div>
+  <div class="card"><div class="icon">📈</div><h3>Grow Faster</h3><p>Actionable insights that help you scale effortlessly.</p></div>
+</section>
+</body>
+</html>

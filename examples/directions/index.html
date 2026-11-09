@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pretty-ui: compare</title>
+<style>
+  :root { --w: 1440px; --h: 900px; --n: 3; --gap: 24px; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 24px; background: #e9e9e6; color: #1a1a1a; font: 14px/1.4 system-ui, sans-serif; }
+  main { display: grid; grid-template-columns: repeat(var(--n), 1fr); gap: var(--gap); align-items: start; }
+  figure { margin: 0; }
+  figcaption { margin: 0 0 8px; font-weight: 600; }
+  .frame { position: relative; width: 100%; aspect-ratio: 1440 / 900; overflow: hidden; border-radius: 8px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+  iframe { position: absolute; top: 0; left: 0; width: var(--w); height: var(--h); border: 0; transform-origin: 0 0; }
+</style>
+</head>
+<body>
+<main>
+<figure><figcaption>A: Paper</figcaption><div class="frame"><iframe src="a-paper.html" loading="lazy" title="A: Paper"></iframe></div></figure>
+<figure><figcaption>B: Ledger</figcaption><div class="frame"><iframe src="b-ledger.html" loading="lazy" title="B: Ledger"></iframe></div></figure>
+<figure><figcaption>C: Pop</figcaption><div class="frame"><iframe src="c-pop.html" loading="lazy" title="C: Pop"></iframe></div></figure>
+</main>
+<script>
+  const fit = () => document.querySelectorAll('.frame').forEach((f) => {
+    f.querySelector('iframe').style.transform = 'scale(' + f.clientWidth / 1440 + ')';
+  });
+  addEventListener('resize', fit);
+  fit();
+</script>
+</body>
+</html>

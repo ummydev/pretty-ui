@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tally, direction B: Ledger</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #0C0E0D; --fg: #E6E9E4; --card: #131614; --primary: #FFB224; --muted: #8F978F; --border: #262B27; --blue: #5BC0F2; --green: #9BD35A; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--fg); font: 15px/1.55 'IBM Plex Sans', system-ui, sans-serif; min-height: 900px; }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+  nav { display: flex; align-items: center; gap: 28px; padding: 24px 0; font-size: 14px; }
+  .logo { font-weight: 600; font-size: 18px; margin-right: auto; }
+  nav a { color: var(--muted); text-decoration: none; }
+  .btn { display: inline-block; padding: 12px 16px; border-radius: 6px; background: var(--primary); color: var(--bg); font-weight: 600; text-decoration: none; }
+  .btn.line { background: transparent; color: var(--fg); border: 1px solid var(--border); }
+  .hero { padding: 64px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end; }
+  h1 { font-size: 56px; line-height: 1.05; font-weight: 600; letter-spacing: -.025em; }
+  .lead { margin-top: 20px; font-size: 18px; color: var(--muted); max-width: 32em; }
+  .actions { display: flex; gap: 12px; margin-top: 28px; }
+  .board { margin-top: 48px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; }
+  .board-head { display: flex; gap: 48px; padding: 20px 24px; border-bottom: 1px solid var(--border); }
+  .stat span { display: block; font-size: 13px; color: var(--muted); }
+  .stat b { font: 500 30px/1.2 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; }
+  .stat b.accent { color: var(--primary); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; font-weight: 500; color: var(--muted); padding: 12px 24px; border-bottom: 1px solid var(--border); }
+  td { padding: 16px 24px; border-bottom: 1px solid var(--border); }
+  td.num { font-family: 'IBM Plex Mono', monospace; text-align: right; }
+  th.num { text-align: right; }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 8px; }
+  .side { font-size: 15px; color: var(--muted); }
+  .side p + p { margin-top: 12px; }
+  .side b { color: var(--fg); font-weight: 500; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><span class="logo">Tally</span><a href="#">How it works</a><a href="#">Pricing</a><a href="#">Sign in</a><a class="btn" href="#">Start free trial</a></nav>
+  <section class="hero">
+    <div>
+      <h1>Get paid without chasing clients.</h1>
+      <p class="lead">Tally sends your invoices, reminds clients when they're late, and takes card or bank payments, so you can stop writing awkward follow-up emails.</p>
+      <div class="actions"><a class="btn" href="#">Start free trial</a><a class="btn line" href="#">See a sample invoice</a></div>
+    </div>
+    <div class="side">
+      <p><b>12,400 freelancers</b> send their invoices with Tally.</p>
+      <p>Payments arrive <b>9 days sooner</b> on average, because reminders go out on time, every time.</p>
+    </div>
+  </section>
+  <div class="board">
+    <div class="board-head">
+      <div class="stat"><span>Outstanding</span><b class="accent">$6,850.00</b></div>
+      <div class="stat"><span>Paid this month</span><b>$18,420.00</b></div>
+      <div class="stat"><span>Average days to pay</span><b>11.4</b></div>
+    </div>
+    <table>
+      <tr><th>Invoice</th><th>Client</th><th>Status</th><th class="num">Amount</th></tr>
+      <tr><td>#0142</td><td>Harbour Studio</td><td><span class="dot" style="background: var(--green)"></span>Paid 3 Nov</td><td class="num">$3,200.00</td></tr>
+      <tr><td>#0143</td><td>Northline Coffee</td><td><span class="dot" style="background: var(--primary)"></span>Reminder sent today</td><td class="num">$1,850.00</td></tr>
+      <tr><td>#0144</td><td>Field Notes Press</td><td><span class="dot" style="background: var(--blue)"></span>Due 14 Nov</td><td class="num">$5,000.00</td></tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>

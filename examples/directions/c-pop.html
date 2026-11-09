@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tally, direction C: Pop</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #FFFDF5; --fg: #141414; --card: #FFFFFF; --yellow: #FFE45C; --coral: #FF6B4A; --muted: #5C5A52; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--fg); font: 500 17px/1.55 'Manrope', system-ui, sans-serif; min-height: 900px; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  nav { display: flex; align-items: center; gap: 28px; padding: 24px 0; font-size: 15px; font-weight: 700; }
+  .logo { font: 600 24px 'Unbounded', system-ui, sans-serif; margin-right: auto; }
+  nav a { color: var(--fg); text-decoration: none; }
+  .btn { display: inline-block; padding: 16px 24px; border: 2px solid var(--fg); border-radius: 14px; background: var(--fg); color: var(--yellow); font-weight: 700; text-decoration: none; box-shadow: 4px 4px 0 var(--fg); }
+  .btn.alt { background: var(--card); color: var(--fg); }
+  .hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 56px; padding: 56px 0 0; align-items: center; }
+  h1 { font: 600 66px/1.02 'Unbounded', system-ui, sans-serif; letter-spacing: -.03em; }
+  .lead { margin-top: 24px; font-size: 20px; color: var(--muted); max-width: 30em; }
+  .actions { display: flex; gap: 16px; margin-top: 32px; }
+  .proof { margin-top: 28px; font-weight: 700; }
+  .stack { position: relative; height: 470px; }
+  .inv { position: absolute; width: 360px; padding: 24px; background: var(--card); border: 2px solid var(--fg); border-radius: 14px; box-shadow: 6px 6px 0 var(--fg); }
+  .inv h3 { font: 600 18px 'Unbounded', system-ui, sans-serif; margin-bottom: 12px; }
+  .inv .amt { font: 600 40px 'Unbounded', system-ui, sans-serif; margin: 8px 0 12px; font-variant-numeric: tabular-nums; }
+  .tag { display: inline-block; padding: 4px 12px; border: 2px solid var(--fg); border-radius: 999px; font-size: 14px; font-weight: 700; }
+  .one { top: 0; left: 0; transform: rotate(-3deg); }
+  .two { top: 180px; left: 120px; background: var(--yellow); transform: rotate(2deg); }
+  .two .tag { background: var(--coral); }
+  .inv p { color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><span class="logo">Tally</span><a href="#">How it works</a><a href="#">Pricing</a><a href="#">Sign in</a><a class="btn" href="#">Start free trial</a></nav>
+  <section class="hero">
+    <div>
+      <h1>Get paid without chasing clients.</h1>
+      <p class="lead">Tally sends your invoices, reminds clients when they're late, and takes card or bank payments, so you can stop writing awkward follow-up emails.</p>
+      <div class="actions"><a class="btn" href="#">Start free trial</a><a class="btn alt" href="#">See a sample invoice</a></div>
+      <p class="proof">12,400 freelancers get paid 9 days sooner on average.</p>
+    </div>
+    <div class="stack">
+      <div class="inv one"><h3>Harbour Studio</h3><span class="tag">Paid 3 Nov</span><div class="amt">$3,200</div><p>Brand identity, round 2</p></div>
+      <div class="inv two"><h3>Northline Coffee</h3><span class="tag">Reminder sent</span><div class="amt">$1,850</div><p>Tally followed up for you this morning.</p></div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

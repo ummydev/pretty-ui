@@ -1,0 +1,28 @@
+{
+  "name": "pretty-ui",
+  "version": "1.0.0",
+  "description": "Make AI-built UI look designed: pick from three real directions, save it as DESIGN.md, apply it pass by pass, and check for AI tells.",
+  "author": {
+    "name": "Codex Design",
+    "url": "https://codexdesign.io"
+  },
+  "homepage": "https://github.com/ummydev/pretty-ui",
+  "repository": "https://github.com/ummydev/pretty-ui",
+  "license": "MIT",
+  "keywords": ["skills", "design", "ui", "design-system", "design-md", "anti-slop", "frontend", "mobile"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "pretty-ui",
+    "shortDescription": "Make AI-built UI look designed, not generated.",
+    "longDescription": "pretty-ui shows three real design directions side by side, saves the one you pick as DESIGN.md, applies it across your screens pass by pass, and checks the result for AI tells. For websites, web apps and mobile apps.",
+    "developerName": "Codex Design",
+    "category": "Design",
+    "capabilities": [],
+    "websiteURL": "https://codexdesign.io/design-systems",
+    "defaultPrompt": [
+      "Make this landing page look less AI-generated.",
+      "Pick a design system for my app and show me three directions.",
+      "Redesign this dashboard and keep our brand colors."
+    ]
+  }
+}

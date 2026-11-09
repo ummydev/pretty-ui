@@ -1,0 +1,23 @@
+{
+  "name": "pretty-ui",
+  "description": "Make AI-built UI look designed: pick from three real directions, save it as DESIGN.md, apply it pass by pass, and check for AI tells.",
+  "owner": {
+    "name": "Codex Design"
+  },
+  "plugins": [
+    {
+      "name": "pretty-ui",
+      "description": "Shows three real design directions side by side, saves the one you pick as DESIGN.md, applies it across your screens and checks for AI tells. For websites, web apps and mobile apps.",
+      "version": "1.0.0",
+      "source": "./",
+      "skills": ["./skills/pretty-ui"],
+      "author": {
+        "name": "Codex Design"
+      },
+      "homepage": "https://github.com/ummydev/pretty-ui",
+      "repository": "https://github.com/ummydev/pretty-ui",
+      "license": "MIT",
+      "keywords": ["skills", "design", "ui", "design-system", "design-md", "anti-slop"]
+    }
+  ]
+}
